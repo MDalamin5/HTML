@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RowSpan And Colspan</title>
+    <style>
+        table,td,th{
+            border:2px solid black;
+        }
+        table{
+            border-collapse:collapse;
+            height: 300px;
+            width: 400px;
+        
+        }
+        th,tr,td{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th colspan="2">Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> 101</td>
+                <td rowspan="3"> Almin</td>
+                <td> 016</td>
+                <td rowspan="4"> 017</td>
+            </tr>
+            <tr>
+                <td> 101</td>
+                
+                <td> 016</td>
+                
+            </tr>
+            <tr>
+                <td> 101</td>
+                
+                <td> 016</td>
+                
+            </tr>
+            <tr>
+                <td> 101</td>
+                <td> Almin</td>
+                <td> 016</td>
+                
+            </tr>
+        </tbody>
+    </table>
+       
+</body>
+</html>
